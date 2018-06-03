@@ -11,5 +11,14 @@
   
   lorm@lorm-Inspiron-3558:~/桌面$ ls
   jdk-8u171-linux-x64.tar.gz  xampp-linux-x64-5.6.36-0-installer.run PhpStorm-2018.1.4.tar.gz
-  
+ 
   lorm@lorm-Inspiron-3558:~/桌面$ sudo ./xampp-linux-x64-5.6.36-0-installer.run 
+  
+ 3、移动PhpStrom解压包到opt文件夹中
+  lorm@lorm-Inspiron-3558:~$ cd 桌面
+  
+  lorm@lorm-Inspiron-3558:~/桌面$ ls
+  jdk-8u171-linux-x64.tar.gz  PhpStorm-2018.1.4.tar.gz
+  PhpStorm                    xampp-linux-x64-5.6.36-0-installer.run
+  
+  lorm@lorm-Inspiron-3558:~/桌面$ sudo mv PhpStorm/ /otp/
