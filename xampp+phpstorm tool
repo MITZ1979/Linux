@@ -66,5 +66,18 @@
   INFO: Created user preferences directory.
   六月 04, 2018 12:16:12 上午 java.util.prefs.FileSystemPreferences$6 run
   WARNING: Prefs file removed in background /home/lorm/.java/.userPrefs/prefs.xml
+  
+  
+  
+   5、赋予创建文件夹的权限
+   lorm@lorm-Inspiron-3558:/opt/lampp/htdocs$ cd ../
+    lorm@lorm-Inspiron-3558:/opt/lampp$ ls
+    apache2  cgi-bin             docs   htdocs  include  lib       logs                   manual   pear        proftpd         RELEASENOTES  temp           var
+    bin      COPYING.thirdparty  error  icons   info     libexec   man                    modules  php         properties.ini  sbin          uninstall      xampp
+    build    ctlscript.sh        etc    img     lampp    licenses  manager-linux-x64.run  mysql    phpmyadmin  README-wsrep    share         uninstall.dat
+    lorm@lorm-Inspiron-3558:/opt/lampp$ sudo chmod 777 htdocs/
+    [sudo] lorm 的密码： 
+    lorm@lorm-Inspiron-3558:/opt/lampp$ 
+
 
 
