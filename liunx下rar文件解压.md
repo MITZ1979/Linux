@@ -30,8 +30,6 @@
 
 rar a etc.rar /etc
 
-    1
-
 将etc.rar 解压 命令为：
 
     rar x etc.rar 
