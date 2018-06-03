@@ -22,3 +22,7 @@
   PhpStorm                    xampp-linux-x64-5.6.36-0-installer.run
   
   lorm@lorm-Inspiron-3558:~/桌面$ sudo mv PhpStorm/ /otp/
+
+
+4、切换opt目录
+  lorm@lorm-Inspiron-3558:~/桌面$ nautilus /opt/
