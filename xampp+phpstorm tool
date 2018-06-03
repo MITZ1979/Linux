@@ -42,4 +42,29 @@
   fsnotifier-arm   log.xml                 printenv.py
   idea.properties  phpstorm64.vmoptions    restart.py
   lorm@lorm-Inspiron-3558:/opt/PhpStrom/bin$ 
+  --执行到./phpstorm.sh如果没有安葬jdk则需要安葬jdk
+    从oracle官网下载jdk
+    lorm@lorm-Inspiron-3558:/opt/PhpStrom/bin$ nautilus ~/Desktop/
+    lorm@lorm-Inspiron-3558:/opt/PhpStrom/bin$ sudo mv ~/Desktop/jdk1.8.0_25/ /opt/
+    
+    配置环境变量
+      sudo nano /ect/profile
+      
+      在文件的最下边写上
+      export JDK_HOME=/opt/jdk1.8.0_25
+      
+      保存退出
+      source /etc/profile
+      echo $JDK_HOME
+      
+  
+  
+  --安装成功则为下一步
+  lorm@lorm-Inspiron-3558:/opt/PhpStrom/bin$ ./phpstorm.sh 
+  Gtk-Message: 00:16:10.384: Failed to load module "canberra-gtk-module"
+  六月 04, 2018 12:16:12 上午 java.util.prefs.FileSystemPreferences$1 run
+  INFO: Created user preferences directory.
+  六月 04, 2018 12:16:12 上午 java.util.prefs.FileSystemPreferences$6 run
+  WARNING: Prefs file removed in background /home/lorm/.java/.userPrefs/prefs.xml
+
 
