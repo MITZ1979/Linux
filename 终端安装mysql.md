@@ -114,4 +114,17 @@ ERROR 2002 (HY000):Can’t connect to local MySQL server
 
     OK!
 
+
+# ERROR 1698 (28000): Access denied for user 'root'@'localhost'安装MySQL时未设置密码，普通用户连接MySQL时需要密码进入的解决办法
+2018年01月04日 19:35:19
+阅读数：1865
+
+1.使用sudo apt-get install mysql-server安装数据库，在安装的过程中未设置密码。
+
+
+2.在普通用户下使用命令mysql -uroot -p连接数据库，由于没有设置密码，所以在需要输入密码的时候，直接按了Enter键，从而导致了错误：ERROR 1698 (28000): Access denied for user 'root'@'localhost'
+
+
+解决办法：在连接mysql数据库的时候，使用命令sudo mysql -uroot -p连接数据库，由于没有设置密码，所以在需要输入密码的时候，直接按Enter键。
+
   
