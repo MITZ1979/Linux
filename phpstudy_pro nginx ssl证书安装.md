@@ -1,4 +1,4 @@
-###phpstudy_pro nginx ssl证书安装
+# phpstudy_pro nginx ssl证书安装
 
 
 user name:mitz1979
@@ -7,23 +7,23 @@ email:1519792930@qq.com
 
 phone number:15015920872
 
-#ssl域名证书审核
+## ssl域名证书审核
 
-	#需要添加cname解析或者TX记录解析，本人用的时tx记录解析验证
+	需要添加cname解析或者TX记录解析，本人用的时tx记录解析验证
 
 
 
-#上传nginx ssl证书到/usr/local/phpstudy/certs/ftbcoin.top目录下
+## 上传nginx ssl证书到/usr/local/phpstudy/certs/ftbcoin.top目录下
 
  	 ftbcoin.top_nginx_chain.crt
  	 ftbcoin.top_nginx.key
  	 ftbcoin.top_nginx_public.crt
 
-#Nginx 配置 https 出现no "ssl_certificate" is defined问题原因及解决方法
+##Nginx 配置 https 出现no "ssl_certificate" is defined问题原因及解决方法
 
 	vim /usr/local/phpstudy/soft/nginx/nginx-1.15/nginx/conf/nginx.conf
 	
-#添加以下两行到
+##添加以下两行到
 	http{
 		#证书文件
 		ssl_certificate /usr/local/phpstudy/certs/ftbcoin.top/ftbcoin.top_nginx_public.crt; 
@@ -219,7 +219,7 @@ vim /usr/local/phpstudy/vhost/nginx/0ftbcoin.top_80.conf
 		}
 	}
 
-#安装完成，最后重启nginx服务。
+##安装完成，最后重启nginx服务。
 
-#遇到的坑，在phpstudy添加域名时，端口默认80，不需要修改为443.如：
+##遇到的坑，在phpstudy添加域名时，端口默认80，不需要修改为443.如：
 ftbcoin.top:443 会导致打开错误。
